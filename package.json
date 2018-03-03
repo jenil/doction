@@ -6,7 +6,8 @@
   "author": "Jenil Gogari <jenil27@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "dependencies": {},
   "devDependencies": {
