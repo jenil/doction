@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Docur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/chota">
+</head>
+
+<body mv-app="docur" mv-storage="local" mv-plugins="markdown">
+  <div class="mv-bar mv-ui mv-fixed"></div>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <div id="logo">
+        <h1>
+          <a href="/">
+            <div property="siteTitle">Logo</div>
+            <div class="small" property="siteSubTitle">Design System</div>
+          </a>
+        </h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li property="page" typeof="Nav" mv-multiple="">
+            <a property="url" href=#>
+              <div property="pageTitle"></div>
+            </a>
+          </li>
+          <button class="mv-add-page is-text-uppercase button clear">+ Add page</button>
+        </ul>
+      </nav>
+    </aside>
+    <section class="main">
+      <div class="container">
+        <main id=pages>
+          <section class="page">
+            <div class="content markdown" property="content"># Welcome</div>
+            <div class="content markdown" property="content" mv-multiple="">Kick-off the repository for your amazing new design system new creating a new page from the left sidebar.
+            Also, make sure you have the Sketch plugin installed so that you can import designs into the repository.</div>
+            <img property="contentImage">
+            <button class="mv-add-content is-text-uppercase button clear">+ Add content</button>
+          </section>
+        </main>
+      </div>
+    </section>
+  </div>
+  <link rel="stylesheet" href=https://get.mavo.io/mavo.css>
+  <link rel="stylesheet" href=css/main.css>
+  <script src=https://get.mavo.io/mavo.js></script>
+</body>
+<!--<h1>Welcome!</h1>
+  <p>Kick-off the repository for your amazing new design system new creating a new page from the left sidebar.
+  <br> Also, make sure you have the Sketch plugin installed so that you can import designs into the repository.</p>-->
+
+</html>

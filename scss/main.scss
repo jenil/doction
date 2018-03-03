@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #005fde;
+  --highlight-bg: rgba(187, 255, 0, 0.5);
+}
+
+body[mv-permissions*='save'] {
+  padding-top: 3rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside.sidebar {
+  width: 20%;
+  min-width: 220px;
+  height: 100vh;
+  padding: 1rem 2rem;
+  background: #edf0f3;
+  -webkit-box-shadow: inset -1px 0px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset -1px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+  margin: 0;
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    span {
+      display: block;
+      width: 100%;
+    }
+    div.small {
+      font-size: 75%;
+      display: block;
+      font-weight: 600;
+      letter-spacing: normal;
+      width: 100%;
+    }
+  }
+}
+
+section.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.mv-bar.mv-ui {
+  height: 3rem;
+  background: rgba(51, 51, 51, 0.7);
+  button {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
+}
+
+nav.main-nav ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    padding-bottom: 0.5rem;
+    + button.mv-ui {
+      display: none !important;
+    }
+    a {
+      display: block;
+      span {
+        display: block;
+      }
+    }
+    &[mv-mode='edit'] + button.mv-ui {
+      display: inline-block !important;
+    }
+  }
+}
+
+.mv-add-content.clear, .mv-add-page.clear {
+  padding-left: 0;
+  color: var(--darkGrey-color);
+}
+
+li[property='page'] {
+  list-style: none;
+}
+
+section.page {
+  .content {
+    margin-bottom: 2rem;
+  }
+  button[class*='mv-'] {
+    display: none !important;
+  }
+  [mv-mode='edit'] ~ button[class*='mv-'] {
+    display: inline-block !important;
+  }
+}
+
+[property][mv-mode='edit']:not([typeof]):not([mv-group]):not(input):not(select):not(textarea):hover {
+  -webkit-box-shadow: 0 0 0 50vmax var(--highlight-bg) inset;
+  box-shadow: 0 0 0 50vmax var(--highlight-bg) inset;
+  outline: 1px dashed var(--darkGrey-color);
+}
