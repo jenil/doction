@@ -16,26 +16,6 @@
 				"The getting started page should provide information on how to get up and running with the design system.\n\n### Downloading\nProvide links and information for downloading the design system’s files:\n\n<a class=\"button primary\">Download the Sketch Library</a>\n\n### Code conventions\nProvide a link to learn more about code conventions.\n\n### Support and Community\nProvide information on where people can go to ask for help, and provide a link to the contribution page to help plant tback to the system."
 			],
 			"section": []
-		},
-		{
-			"pageTitle": "Styles",
-			"pageContent": [
-				"Styles are guidelines for core brand attributes, organized by category. These are descriptions of conventions that cut across component and suggest the rules that go into building/designing components and their treatment."
-			],
-			"section": [
-				{
-					"sectionTitle": "Color",
-					"sectionContent": [
-						"Color styles define how color is used in the design system.\n\nFor inspiration, check out [Material Design’s color styles page](https://material.io/guidelines/style/color.html)."
-					]
-				},
-				{
-					"sectionTitle": "Typography",
-					"sectionContent": [
-						"For inspiration, check out [Material Design’s typography styles](https://material.io/guidelines/style/typography.html#typography-styles)."
-					]
-				}
-			]
 		}
 	]
 }
