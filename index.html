@@ -1,9 +1,11 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Doction Documentation</title>
+  <title>Doction Documentation | {{ site.title }} </title>
   <meta name="canonical" content="{{ site.github.url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/chota">
@@ -67,8 +69,11 @@ Also, make sure you have the Sketch plugin installed so that you can import desi
     console.log(storage)
 
     if (storage == 'local') {
-      // document.body.setAttribute('mv-storage', 'https://github.com/jenil/')
+      var repo = '{{ site.github.repository_url }}'
+      document.body.setAttribute('mv-storage', repo);
     }
+    var githubDump = {{ site.github | jsonify }};
+    console.log(githubDump)
   </script>
   <script src=https://get.mavo.io/mavo.js></script>
   <script src="js/main.js"></script>
