@@ -13,7 +13,7 @@
 		{
 			"pageTitle": "Getting Started",
 			"pageContent": [
-				"> The getting started page should provide information on how to get up and running with the design system.\n\n### Downloading\nProvide links and information for downloading the design system’s files:\n\n<a class=\"button primary\">Download the Sketch Library</a>\n\n### Code conventions\nProvide a link to learn more about code conventions.\n\n### Support and Community\nProvide information on where people can go to ask for help, and provide a link to the contribution page to help plant tback to the system."
+				"The getting started page should provide information on how to get up and running with the design system.\n\n### Downloading\nProvide links and information for downloading the design system’s files:\n\n<a class=\"button primary\">Download the Sketch Library</a>\n\n### Code conventions\nProvide a link to learn more about code conventions.\n\n### Support and Community\nProvide information on where people can go to ask for help, and provide a link to the contribution page to help plant tback to the system."
 			],
 			"section": []
 		}
