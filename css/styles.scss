@@ -1,10 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 :root {
   --primary-color: #005fde;
   --highlight-bg: rgba(187, 255, 0, 0.5);
-}
-
-body[mv-permissions*='save'] {
-  padding-top: 3rem;
 }
 
 .wrapper {
@@ -14,17 +14,20 @@ body[mv-permissions*='save'] {
 }
 
 aside.sidebar {
-  width: 20%;
-  min-width: 220px;
+  width: 220px;
   height: 100vh;
   padding: 1rem 2rem;
   background: #edf0f3;
   -webkit-box-shadow: inset -1px 0px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset -1px 0px 2px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  overflow-y: scroll;
 }
 
 #logo {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   h1 {
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     font-weight: 900;
@@ -48,38 +51,72 @@ section.main {
   -ms-flex: 1;
   flex: 1;
   padding: 1rem 2rem;
+  margin-left: 220px;
 }
 
 .mv-bar.mv-ui {
   height: 3rem;
   background: rgba(51, 51, 51, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   button {
     font-size: 1.5em;
     padding: 0 1em;
   }
 }
 
-nav.main-nav ul {
+.mv-bar.mv-fixed + .wrapper {
+  margin-top: 3rem;
+}
+
+[mv-app][mv-mode='edit'] .mv-editor:focus,
+[mv-app] [mv-mode='edit'] .mv-editor:focus {
+  box-shadow: none !important;
+}
+
+nav#main-nav ul {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
   li {
-    padding-bottom: 0.5rem;
+    line-height: 2;
     + button.mv-ui {
       display: none !important;
     }
     a {
       display: block;
-      span {
-        display: block;
+      input.mv-editor {
+        width: auto !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        transition: none !important;
       }
     }
     &[mv-mode='edit'] + button.mv-ui {
       display: inline-block !important;
     }
   }
+
+  ul {
+    padding-left: 1.6rem;
+
+    button.mv-ui {
+      display: none !important;
+    }
+
+    &[mv-mode='edit'] button.mv-ui {
+      display: inline-block !important;
+    }
+
+    li {
+      padding: 0;
+    }
+  }
 }
 
-.mv-add-content.clear, .mv-add-page.clear {
+.mv-add-content.clear,
+.mv-add-navPage.clear,
+.mv-add-navSubPage.clear {
   padding-left: 0;
   color: var(--darkGrey-color);
 }
@@ -89,15 +126,26 @@ li[property='page'] {
 }
 
 section.page {
+  min-height: 100vh;
+  border-bottom: 1px solid var(--lightGrey-color);
+  margin: 0 0 5rem 0;
+
   .content {
     margin-bottom: 2rem;
   }
-  button[class*='mv-'] {
-    display: none !important;
+
+  section {
+    padding-top: 3rem;
+    min-height: 100vh;
   }
-  [mv-mode='edit'] ~ button[class*='mv-'] {
-    display: inline-block !important;
-  }
+
+  // button[class*='mv-'] {
+  //   display: none !important;
+  // }
+
+  // [mv-mode='edit'] ~ button[class*='mv-'] {
+  //   display: inline-block !important;
+  // }
 }
 
 [property][mv-mode='edit']:not([typeof]):not([mv-group]):not(input):not(select):not(textarea):hover {

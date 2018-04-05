@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Doction Documentation</title>
-  <meta name="canonical" content="{{ site.github.url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/chota">
 </head>
@@ -18,18 +17,18 @@
         <img src="" mv-default="https://icongr.am/fontawesome/cube.svg?size=128" alt="" property="logo">
         <h1>
           <a href="/">
-            <div property="siteTitle" mv-default="Company"></div>
+            <div property="siteTitle" mv-default="Doction"></div>
             <div class="small" property="siteSubTitle">Design System</div>
           </a>
         </h1>
       </div>
       <nav id="main-nav">
         <ul>
-          <li property="navPage" typeof="Nav" mv-multiple mv-value="page">
-            <a property class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null"></a>
-            <ul property="subNav">
-              <li property="navSubPage" mv-like typeof="SubNav" mv-multiple mv-optional mv-value="section">
-                <a property class="sectionTitle" href="#[idify(pageTitle)]-[idify(sectionTitle)]" mv-attribute="null"></a>
+          <li property="navPage" typeof="Nav" mv-multiple>
+            <a property class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null">Welcome</a>
+            <ul property="subNav" mv-optional>
+              <li property="navSubPage" mv-like typeof="SubNav" mv-multiple mv-optional>
+                <a property class="subPageTitle" href="#/[idify(pageTitle)]-[idify(subPageTitle)]" mv-attribute="null"></a>
               </li>
               <button class="mv-add-navSubPage is-text-uppercase button clear">+ Add sub page</button>
             </ul>
@@ -41,20 +40,17 @@
     <section class="main">
       <div class="container">
         <main id="pages">
-          <section class="page" property="page" mv-multiple typeof="Page" id="[idify(pageTitle)]">
+          <section class="page" property="page" mv-multiple typeof="Page" id="[idify(pageTitle)]" mv-page-index="[$index]" mv-expressions="{ }">
             <h1 property="pageTitle">Welcome</h1>
-            <div class="content markdown" property="pageContent" mv-multiple mv-default="Kick-off the documentation for your amazing new design system new creating a new page from the left sidebar.
+            <div class="content markdown" property="content" mv-multiple mv-like="content">
+Kick-off the repository for your amazing new design system new creating a new page from the left sidebar.
 Also, make sure you have the Sketch plugin installed so that you can import designs into the repository.
-  
-![Image](//source.unsplash.com/500x400)">
+
+![Image](//source.unsplash.com/500x400)
             </div>
-            <section mv-multiple property="section" id="[idify(pageTitle)]-[idify(sectionTitle)]" mv-optional>
-              <h2 property="sectionTitle" mv-default="Section title"></h2>
-              <div class="content markdown" property="sectionContent" mv-multiple mv-default="Vitae neque platea himenaeos augue rutrum">
-              </div>
-            </section>
             <div class="clearfix"></div>
             <br>
+            <button class="mv-add-content is-text-uppercase button clear">+ Add content</button>
           </section>
         </main>
       </div>
@@ -71,7 +67,7 @@ Also, make sure you have the Sketch plugin installed so that you can import desi
     }
   </script>
   <script src=https://get.mavo.io/mavo.js></script>
-  <script src="js/main.js"></script>
+  <script src="js/j.js"></script>
 </body>
 
 </html>

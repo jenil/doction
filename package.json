@@ -6,14 +6,17 @@
   "author": "Jenil Gogari <jenil27@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "gulp",
-    "deploy": "gulp deploy"
+    "start": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^8.0.0-beta.2",
     "gulp-cached": "^1.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-gh-pages": "^0.5.4",
@@ -27,6 +30,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-lint": "^1.1.1",
     "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.0.1",
     "jshint": "^2.9.1"
