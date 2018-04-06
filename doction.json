@@ -9,6 +9,13 @@
 				"Kick-off the documentation for your amazing new design system new creating a new page from the left sidebar.\nAlso, make sure you have the Sketch plugin installed so that you can import designs into the repository.\n  \n![Image](//source.unsplash.com/500x400)"
 			],
 			"section": []
+		},
+		{
+			"pageTitle": "Getting Started",
+			"pageContent": [
+				"The getting started page should provide information on how to get up and running with the design system.\n\n### Downloading\nProvide links and information for downloading the design system’s files:\n\n<a class=\"button primary\">Download the Sketch Library</a>\n\n### Code conventions\nProvide a link to learn more about code conventions.\n\n### Support and Community\nProvide information on where people can go to ask for help, and provide a link to the contribution page to help plant tback to the system."
+			],
+			"section": []
 		}
 	]
 }
