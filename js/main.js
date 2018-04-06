@@ -29,8 +29,4 @@
     }
   })
 
-  $('.mv-add-navPage').addEventListener('click', e => {
-    console.log(e)
-  })
-
 })($)

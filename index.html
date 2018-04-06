@@ -8,7 +8,7 @@
   <title>Doction Documentation | {{ site.title }} </title>
   <meta name="canonical" content="{{ site.github.url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/chota">
+  <link rel="stylesheet" href="css/chota.css">
 </head>
 
 <body mv-app="doction" mv-storage="local" mv-plugins="markdown">
@@ -27,16 +27,14 @@
       </div>
       <nav id="main-nav">
         <ul>
-          <li property="navPage" typeof="Nav" mv-multiple mv-value="page">
-            <a property class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null"></a>
-            <ul property="subNav">
-              <li property="navSubPage" mv-like typeof="SubNav" mv-multiple mv-optional mv-value="section">
+          <li property="navPage" typeof="Page" mv-multiple mv-value="page">
+            <a class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null">[pageTitle] ([section.length])</a>
+            <ul mv-if="section.length > 0">
+              <li property="section" mv-value="section" mv-multiple mv-optional>
                 <a property class="sectionTitle" href="#[idify(pageTitle)]-[idify(sectionTitle)]" mv-attribute="null"></a>
               </li>
-              <button class="mv-add-navSubPage is-text-uppercase button clear">+ Add sub page</button>
             </ul>
           </li>
-          <button class="mv-add-navPage is-text-uppercase button clear">+ Add page</button>
         </ul>
       </nav>
     </aside>
@@ -44,15 +42,12 @@
       <div class="container">
         <main id="pages">
           <section class="page" property="page" mv-multiple typeof="Page" id="[idify(pageTitle)]">
-            <h1 property="pageTitle">Welcome</h1>
-            <div class="content markdown" property="pageContent" mv-multiple mv-default="Kick-off the documentation for your amazing new design system new creating a new page from the left sidebar.
-Also, make sure you have the Sketch plugin installed so that you can import designs into the repository.
-  
-![Image](//source.unsplash.com/500x400)">
+            <h1 property="pageTitle" mv-default="Page [$index + 1]">Welcome</h1>
+            <div class="content markdown" property="pageContent" mv-multiple mv-default="Content for the page. A page can also contain sections.">
             </div>
-            <section mv-multiple property="section" id="[idify(pageTitle)]-[idify(sectionTitle)]" mv-optional>
-              <h2 property="sectionTitle" mv-default="Section title"></h2>
-              <div class="content markdown" property="sectionContent" mv-multiple mv-default="Vitae neque platea himenaeos augue rutrum">
+            <section mv-multiple mv-optional property="section" id="[idify(pageTitle)]-[idify(sectionTitle)]">
+              <h2 property="sectionTitle" mv-default="Section [$index + 1]"></h2>
+              <div class="content markdown" property="sectionContent" mv-multiple mv-default="Section content goes here...">
               </div>
             </section>
             <div class="clearfix"></div>
@@ -65,13 +60,15 @@ Also, make sure you have the Sketch plugin installed so that you can import desi
   <link rel="stylesheet" href=https://get.mavo.io/mavo.css>
   <link rel="stylesheet" href=css/styles.css>
   <script>
+
+    // DO NOT CHANGE THE LOCATION ON THIS <script> TAG!
     var storage = document.body.getAttribute('mv-storage')
-    console.log(storage)
 
     if (storage == 'local') {
       var repo = '{{ site.github.repository_url }}'
-      document.body.setAttribute('mv-storage', repo);
+      // document.body.setAttribute('mv-storage', repo);
     }
+    console.log(storage)
     var githubDump = {{ site.github | jsonify }};
     console.log(githubDump)
   </script>
