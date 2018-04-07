@@ -134,18 +134,20 @@ section.page {
     margin-bottom: 2rem;
   }
 
-  section {
+  section.subpage {
     padding-top: 3rem;
     min-height: 100vh;
   }
 
-  // button[class*='mv-'] {
-  //   display: none !important;
-  // }
+  .mv-add-section {
+    display: block;
+    margin-top: 1rem;
+  }
+}
 
-  // [mv-mode='edit'] ~ button[class*='mv-'] {
-  //   display: inline-block !important;
-  // }
+#pages > :not([mv-mode='edit']) .mv-add,
+#pages > :not([mv-mode='edit']) + .mv-add {
+  display: none;
 }
 
 [property][mv-mode='edit']:not([typeof]):not([mv-group]):not(input):not(select):not(textarea):hover {

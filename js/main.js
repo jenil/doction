@@ -6,11 +6,7 @@
     pages: '#pages',
     page: '#pages .page'
   }
-  var isAddingPage = false;
-
-  function checkPages() {
-    console.log('pages:', $(_.pages).length);
-  }
+  var isAddingPage = false
 
   var logoImg = $(_.logoImg)
 
@@ -21,12 +17,28 @@
 
   document.addEventListener('mv-save', function(event) {
     // console.log('mv-save : ', event.action, event.property, event.value)
-    checkPages()
-    if (event.property == 'pageTitle') {
-      // Mavo.Collection.get($(_.page))
-      //   .add()
-      //   .render({ content: event.value })
-    }
   })
 
+  function forceUpdateData(e) {
+    console.log(e.type, e.target)
+    Mavo.all[0].render(Mavo.all[0].getData())
+  }
+
+  $('.mv-add-page').addEventListener('click', e => {
+    console.log('click mv-page-add', $$('.mv-add-section').length)
+    setTimeout(() => {
+      $$('.mv-add-section').forEach(e =>
+        e.addEventListener('click', forceUpdateData)
+      )
+    }, 500)
+  })
+
+  $$('.mv-add-section').forEach(e =>
+    e.addEventListener('click', forceUpdateData)
+  )
+
+  $('.page .subpage').addEventListener('mv-change', e => {
+    console.log('mv-change .page .subpage', e)
+    Mavo.all[0].render(Mavo.all[0].getData())
+  })
 })($)

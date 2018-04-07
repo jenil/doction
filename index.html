@@ -27,11 +27,12 @@
       </div>
       <nav id="main-nav">
         <ul>
-          <li property="navPage" typeof="Page" mv-multiple mv-value="page">
-            <a class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null">[pageTitle] ([section.length])</a>
+          <li property="navPage" typeof="Page" mv-multiple mv-value="page" mv-storage="none">
+            <a class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null">[pageTitle]</a>
+            <meta property="pageUrl" mv-storage="none"mv-default="[idify(pageTitle)]">
             <ul mv-if="section.length > 0">
-              <li property="section" mv-value="section" mv-multiple mv-optional>
-                <a property class="sectionTitle" href="#[idify(pageTitle)]-[idify(sectionTitle)]" mv-attribute="null"></a>
+              <li property="section" mv-multiple typeof="Section">
+                <a property class="sectionTitle" href="#[pageUrl]-[idify(sectionTitle)]" mv-attribute="null"></a>
               </li>
             </ul>
           </li>
@@ -45,14 +46,16 @@
             <h1 property="pageTitle" mv-default="Page [$index + 1]">Welcome</h1>
             <div class="content markdown" property="pageContent" mv-multiple mv-default="Content for the page. A page can also contain sections.">
             </div>
-            <section mv-multiple mv-optional property="section" id="[idify(pageTitle)]-[idify(sectionTitle)]">
+            <section class="subpage" mv-multiple mv-optional typeof="Section" property="section" id="[idify(pageTitle)]-[idify(sectionTitle)]">
               <h2 property="sectionTitle" mv-default="Section [$index + 1]"></h2>
               <div class="content markdown" property="sectionContent" mv-multiple mv-default="Section content goes here...">
               </div>
             </section>
+            <button class="mv-add mv-add-section button secondary outline">New sub page</button>
             <div class="clearfix"></div>
             <br>
           </section>
+          <button class="mv-add mv-add-page button primary outline">New page</button>
         </main>
       </div>
     </section>
@@ -65,8 +68,9 @@
     var storage = document.body.getAttribute('mv-storage')
 
     if (storage == 'local') {
-      var repo = '{{ site.github.repository_url }}'
-      // document.body.setAttribute('mv-storage', repo);
+      // https://github.com/jenil/doction/blob/gh-pages/doction.json
+      var repo = '{{ site.github.repository_url }}/blob/{{site.github.source.branch}}/doction.json'
+      document.body.setAttribute('mv-storage', repo);
     }
     console.log(storage)
     var githubDump = {{ site.github | jsonify }};
