@@ -1,5 +1,5 @@
 ;(function($) {
-  console.log()
+
   var _ = {
     logoImg: '#logo img',
     nav: '#main-nav',

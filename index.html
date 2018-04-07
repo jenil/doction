@@ -9,11 +9,13 @@
   <meta name="canonical" content="{{ site.github.url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/chota.css">
+  <!-- Do not remove l.js EVER! It is required for doction to work. -->
+  <script src="js/l.js"></script>
 </head>
 
-<body mv-app="doction" mv-storage="local" mv-plugins="markdown">
+<body mv-app="doction" mv-storage="local" mv-bar="no-login" mv-plugins="markdown">
   <meta property="selectedPage" content="[$hash]">
-  <div class="mv-bar mv-ui mv-fixed"></div>
+  <div class="mv-bar mv-ui mv-fixed no-login"></div>
   <div class="wrapper">
     <aside class="sidebar">
       <div id="logo">
@@ -60,8 +62,8 @@
       </div>
     </section>
   </div>
-  <link rel="stylesheet" href=https://get.mavo.io/mavo.css>
-  <link rel="stylesheet" href=css/styles.css>
+  <link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script>
 
     // DO NOT CHANGE THE LOCATION ON THIS <script> TAG!
@@ -76,7 +78,7 @@
     var githubDump = {{ site.github | jsonify }};
     console.log(githubDump)
   </script>
-  <script src=https://get.mavo.io/mavo.js></script>
+  <script src="https://dev.mavo.io/dist/mavo.js"></script>
   <script src="js/main.js"></script>
 </body>
 
