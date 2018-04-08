@@ -61,9 +61,16 @@
 				{
 					"sectionTitle": "Buttons",
 					"sectionContent": [
-						"Section content goes here..."
+						"Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.\n\n**Function**: Is it important and ubiquitous enough to be a floating action button?\n\n**Dimension**: Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.\n\n**Layout**: Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function."
 					],
-					"artwork": []
+					"artwork": [
+						{
+							"fullWidth": false,
+							"title": "Primary Button",
+							"SvgCode": "\n<svg width=\"110px\" height=\"36px\" viewBox=\"0 0 110 36\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs>\n        <rect id=\"path-1\" x=\"0\" y=\"0\" width=\"110\" height=\"36\" rx=\"4\"></rect>\n    </defs>\n    <g id=\"Components/Buttons\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"Primary\">\n            <g id=\"states*\">\n                <g id=\"Button/Medium/Default\">\n                    <g id=\"UI/Container/Custom\">\n                        <mask id=\"mask-2\" fill=\"white\">\n                            <use xlink:href=\"#path-1\"></use>\n                        </mask>\n                        <use id=\"Base\" fill=\"#FFFFFF\" fill-rule=\"evenodd\" xlink:href=\"#path-1\"></use>\n                        <g id=\"UI/Color/Flat/Primary\" mask=\"url(#mask-2)\" fill=\"#728EA4\" fill-rule=\"evenodd\">\n                            <rect id=\"Base\" x=\"0\" y=\"0\" width=\"110\" height=\"36\"></rect>\n                        </g>\n                    </g>\n                    <g id=\"UI/Border/Custom/1px---10%Black\" stroke=\"#000000\" stroke-opacity=\"0.1\" stroke-width=\"1\">\n                        <rect id=\"Border-Shape\" x=\"0.5\" y=\"0.5\" width=\"109\" height=\"35\" rx=\"4\"></rect>\n                    </g>\n                    <g id=\"Text/Body-(14px)/White/Bold/Centered\" transform=\"translate(25.000000, 9.000000)\" fill=\"#FFFFFF\" font-family=\"SourceSansPro-SemiBold, Source Sans Pro\" font-size=\"14\" font-weight=\"500\" line-spacing=\"21\">\n                        <text id=\"↳-✏️-Value\">\n                            <tspan x=\"8.097\" y=\"13\">Default</tspan>\n                        </text>\n                    </g>\n                </g>\n            </g>\n        </g>\n    </g>\n</svg>",
+							"description": "Use this for primary actions in the UI"
+						}
+					]
 				}
 			]
 		},
