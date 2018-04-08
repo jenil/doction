@@ -20,7 +20,8 @@
 		{
 			"pageTitle": "Styles",
 			"pageContent": [
-				"Content for the page. A page can also contain sections."
+				"Content for the page. A page can also contain sections.",
+				"Style are how we speak the language here"
 			],
 			"section": [
 				{
@@ -28,8 +29,35 @@
 					"sectionContent": [
 						"Color styles define how color is used in the design system.\n\nFor inspiration, check out [Material Design’s color styles page](https://material.io/guidelines/style/color.html)."
 					]
+				},
+				{
+					"sectionTitle": "Typography",
+					"sectionContent": [
+						"Ultrices duis faucibus sed clUltrices duis faucibus sed class commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia.ass commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia."
+					]
 				}
 			]
+		},
+		{
+			"pageTitle": "Components",
+			"pageContent": [
+				"Content for the page. A page can also contain sections."
+			],
+			"section": [
+				{
+					"sectionTitle": "Buttons",
+					"sectionContent": [
+						"Section content goes here..."
+					]
+				}
+			]
+		},
+		{
+			"pageTitle": "Contributing",
+			"pageContent": [
+				"Content for the page. A page can also contain sections."
+			],
+			"section": []
 		}
 	]
 }
