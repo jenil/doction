@@ -28,13 +28,21 @@
 					"sectionTitle": "Colors",
 					"sectionContent": [
 						"Color styles define how color is used in the design system.\n\nFor inspiration, check out [Material Design’s color styles page](https://material.io/guidelines/style/color.html)."
+					],
+					"artwork": [
+						{
+							"title": "Primary",
+							"SvgCode": "<svg width=\"86px\" height=\"86px\" viewBox=\"0 0 86 86\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Colors\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"UI/Color/Flat/Primary\" fill=\"#728EA4\">\n            <rect id=\"Base\" x=\"0\" y=\"0\" width=\"86\" height=\"86\"></rect>\n        </g>\n    </g>\n</svg>",
+							"description": "Say something on when to use the primary color"
+						}
 					]
 				},
 				{
 					"sectionTitle": "Typography",
 					"sectionContent": [
 						"Ultrices duis faucibus sed clUltrices duis faucibus sed class commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia.ass commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia."
-					]
+					],
+					"artwork": []
 				}
 			]
 		},
@@ -48,7 +56,8 @@
 					"sectionTitle": "Buttons",
 					"sectionContent": [
 						"Section content goes here..."
-					]
+					],
+					"artwork": []
 				}
 			]
 		},
