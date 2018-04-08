@@ -14,7 +14,7 @@
 </head>
 
 <body mv-app="doction" mv-storage="local" mv-bar="no-login" mv-plugins="markdown">
-  <meta property="selectedPage" content="[$hash]">
+  <meta property="selectedPage" mv-value="[$hash]">
   <div class="mv-bar mv-ui mv-fixed no-login"></div>
   <div class="wrapper">
     <aside class="sidebar">
@@ -29,11 +29,11 @@
       </div>
       <nav id="main-nav">
         <ul>
-          <li property="navPage" typeof="Page" mv-multiple mv-value="page" mv-storage="none">
+          <li property="navPage" typeof="Page" mv-multiple mv-value="page" mv-storage="none" class="[if($hash == idify(pageTitle), 'active')]">
             <a class="pageTitle" href="#[idify(pageTitle)]" mv-attribute="null">[pageTitle]</a>
-            <meta property="pageUrl" mv-storage="none"mv-default="[idify(pageTitle)]">
+            <meta property="pageUrl" mv-storage="none" mv-default="[idify(pageTitle)]">
             <ul mv-if="section.length > 0">
-              <li property="section" mv-multiple typeof="Section">
+              <li property="section" mv-multiple typeof="Section" class="[if(ends($hash, idify(sectionTitle)), 'active')]">
                 <a property class="sectionTitle" href="#[pageUrl]-[idify(sectionTitle)]" mv-attribute="null"></a>
               </li>
             </ul>
@@ -52,6 +52,18 @@
               <h2 property="sectionTitle" mv-default="Section [$index + 1]"></h2>
               <div class="content markdown" property="sectionContent" mv-multiple mv-default="Section content goes here...">
               </div>
+              <article class="article row" property="artwork" mv-multiple mv-optional>
+                <meta property="fullWidth" mv-default="false" datatype="boolean">
+                <div class="col-12">
+                  <h4 property class="title"></h4>
+                </div>
+                <div class="[if(!fullWidth, 'col-3', 'col-12')]">
+                  <div class="picture markdown" property="SvgCode"></div>
+                </div>
+                <div class="col">
+                  <p class="markdown" property="description"></p>
+                </div>
+              </article>
             </section>
             <button class="mv-add mv-add-section button secondary outline">New sub page</button>
             <div class="clearfix"></div>

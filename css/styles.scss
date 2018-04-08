@@ -95,6 +95,9 @@ nav#main-nav ul {
     &[mv-mode='edit'] + button.mv-ui {
       display: inline-block !important;
     }
+    &.active > a {
+      color: var(--darkGrey-color);
+    }
   }
 
   ul {
@@ -110,6 +113,10 @@ nav#main-nav ul {
 
     li {
       padding: 0;
+      
+      &.active > a {
+        color: var(--darkGrey-color);
+      }
     }
   }
 }
@@ -129,6 +136,7 @@ section.page {
   min-height: 100vh;
   border-bottom: 1px solid var(--lightGrey-color);
   margin: 0 0 5rem 0;
+  padding-top: 2rem;
 
   .content {
     margin-bottom: 2rem;
@@ -137,6 +145,27 @@ section.page {
   section.subpage {
     padding-top: 3rem;
     min-height: 100vh;
+
+    article.article {
+      margin: 3rem 0;
+
+      .title {
+        margin: 0;
+      }
+
+      .picture {
+          .mv-editor {
+            max-height: 50vh;
+          }
+          p {
+          margin: 0;
+        }
+      }
+
+      pre {
+        margin: 0;
+      }
+    }
   }
 
   .mv-add-section {
