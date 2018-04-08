@@ -6,7 +6,7 @@
 		{
 			"pageTitle": "Welcome",
 			"pageContent": [
-				"Kick-off the documentation for your amazing new design system new creating a new page from the left sidebar.\nAlso, make sure you have the Sketch plugin installed so that you can import designs into the repository.\n  \n![Image](https://picsum.photos/600/400)\n\n"
+				"Kick-off the documentation for your amazing new design system new creating a new page from the left sidebar.\nAlso, make sure you have the Sketch plugin installed so that you can import designs into the repository.\n\n![](https://source.unsplash.com/WLUHO9A_xik/800x600)"
 			],
 			"section": []
 		},
@@ -20,16 +20,66 @@
 		{
 			"pageTitle": "Styles",
 			"pageContent": [
-				"Content for the page. A page can also contain sections."
+				"Content for the page. A page can also contain sections.",
+				"Style are how we speak the language here"
 			],
 			"section": [
 				{
 					"sectionTitle": "Colors",
 					"sectionContent": [
 						"Color styles define how color is used in the design system.\n\nFor inspiration, check out [Material Design’s color styles page](https://material.io/guidelines/style/color.html)."
+					],
+					"artwork": [
+						{
+							"title": "Primary",
+							"SvgCode": "<svg width=\"86px\" height=\"86px\" viewBox=\"0 0 86 86\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Colors\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"UI/Color/Flat/Primary\" fill=\"#728EA4\">\n            <rect id=\"Base\" x=\"0\" y=\"0\" width=\"86\" height=\"86\"></rect>\n        </g>\n    </g>\n</svg>",
+							"description": "Say something on when to use the primary color",
+							"fullWidth": false
+						}
+					]
+				},
+				{
+					"sectionTitle": "Typography",
+					"sectionContent": [],
+					"artwork": [
+						{
+							"fullWidth": true,
+							"title": "Heading 1",
+							"SvgCode": "\n<svg width=\"500px\" height=\"25px\" viewBox=\"0 0 500 25\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Typography\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" font-family=\"SourceSansPro-SemiBold, Source Sans Pro\" font-size=\"26\" font-weight=\"500\" line-spacing=\"36\">\n        <g id=\"Heading-1\" transform=\"translate(-2.000000, -8.000000)\" fill=\"#354052\">\n            <text id=\"Font-choices-as-flex\">\n                <tspan x=\"0\" y=\"26\">Font choices as flexible as your imagination</tspan>\n            </text>\n        </g>\n    </g>\n</svg>",
+							"description": "Test\n\n```css\n/* Heading 1: */\nfont-family: SourceSansPro-SemiBold;\nfont-size: 26px;\ncolor: #354052;\nline-height: 36px;\n```"
+						}
 					]
 				}
 			]
+		},
+		{
+			"pageTitle": "Components",
+			"pageContent": [
+				"Content for the page. A page can also contain sections."
+			],
+			"section": [
+				{
+					"sectionTitle": "Buttons",
+					"sectionContent": [
+						"Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.\n\n**Function**: Is it important and ubiquitous enough to be a floating action button?\n\n**Dimension**: Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.\n\n**Layout**: Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function."
+					],
+					"artwork": [
+						{
+							"fullWidth": false,
+							"title": "Primary Button",
+							"SvgCode": "<svg width=\"110\" height=\"36\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <defs>\n    <rect id=\"a\" width=\"110\" height=\"36\" rx=\"4\"/>\n  </defs>\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <mask id=\"b\" fill=\"#fff\">\n      <rect id=\"a\" width=\"110\" height=\"36\" rx=\"4\"/>\n    </mask>\n    <use fill=\"#FFF\" xlink:href=\"#a\"/>\n    <g mask=\"url(#b)\" fill=\"#728EA4\">\n      <path d=\"M0 0h110v36H0z\"/>\n    </g>\n    <g stroke=\"#000\" stroke-opacity=\".1\">\n      <rect x=\".5\" y=\".5\" width=\"109\" height=\"35\" rx=\"4\"/>\n    </g>\n    <g fill=\"#FFF\" font-family=\"SourceSansPro-SemiBold, Source Sans Pro\" font-size=\"14\" font-weight=\"500\">\n      <text transform=\"translate(25 9)\">\n        <tspan x=\"8.1\" y=\"13\">Default</tspan>\n      </text>\n    </g>\n  </g>\n</svg>",
+							"description": "Use this for primary actions in the UI"
+						}
+					]
+				}
+			]
+		},
+		{
+			"pageTitle": "Contributing",
+			"pageContent": [
+				"Content for the page. A page can also contain sections."
+			],
+			"section": []
 		}
 	]
 }
