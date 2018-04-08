@@ -33,16 +33,22 @@
 						{
 							"title": "Primary",
 							"SvgCode": "<svg width=\"86px\" height=\"86px\" viewBox=\"0 0 86 86\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Colors\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"UI/Color/Flat/Primary\" fill=\"#728EA4\">\n            <rect id=\"Base\" x=\"0\" y=\"0\" width=\"86\" height=\"86\"></rect>\n        </g>\n    </g>\n</svg>",
-							"description": "Say something on when to use the primary color"
+							"description": "Say something on when to use the primary color",
+							"fullWidth": false
 						}
 					]
 				},
 				{
 					"sectionTitle": "Typography",
-					"sectionContent": [
-						"Ultrices duis faucibus sed clUltrices duis faucibus sed class commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia.ass commodo conubia ad, auctor sociis lobortis leo sapien ornare consequat morbi, lacinia in mollis curae parturient rutrum. Posuere nullam vel congue erat sollicitudin pharetra euismod, ac nascetur et rutrum est torquent, netus praesent varius primis nunc viverra. Montes congue tristique nascetur nisl sagittis praesent libero, pretium dis arcu adipiscing dictum vehicula. Molestie purus blandit consequat lobortis ullamcorper, sociis cras auctor varius ac quis, velit duis cum posuere. Aptent vehicula adipiscing fringilla dis primis taciti ipsum faucibus dui venenatis, ridiculus duis eros mus auctor ad purus odio nibh, penatibus pulvinar congue fusce conubia est nunc tincidunt proin.\n\nEros elementum tellus enim potenti felis tristique taciti mollis netus, dictum magnis congue posuere vulputate donec nulla. Magna sodales ante cursus molestie vestibulum interdum varius ullamcorper elementum non quis, congue consectetur mus scelerisque lectus ultricies curae rutrum maecenas. Proin condimentum phasellus est vulputate urna litora a fringilla, class lorem libero venenatis vitae convallis donec sem, platea magna velit ullamcorper pharetra mi lacinia."
-					],
-					"artwork": []
+					"sectionContent": [],
+					"artwork": [
+						{
+							"fullWidth": true,
+							"title": "Heading 1",
+							"SvgCode": "\n<svg width=\"500px\" height=\"25px\" viewBox=\"0 0 500 25\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Typography\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" font-family=\"SourceSansPro-SemiBold, Source Sans Pro\" font-size=\"26\" font-weight=\"500\" line-spacing=\"36\">\n        <g id=\"Heading-1\" transform=\"translate(-2.000000, -8.000000)\" fill=\"#354052\">\n            <text id=\"Font-choices-as-flex\">\n                <tspan x=\"0\" y=\"26\">Font choices as flexible as your imagination</tspan>\n            </text>\n        </g>\n    </g>\n</svg>",
+							"description": "Test\n\n```css\n/* Heading 1: */\nfont-family: SourceSansPro-SemiBold;\nfont-size: 26px;\ncolor: #354052;\nline-height: 36px;\n```"
+						}
+					]
 				}
 			]
 		},
