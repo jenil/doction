@@ -184,3 +184,7 @@ section.page {
   box-shadow: 0 0 0 50vmax var(--highlight-bg) inset;
   outline: 1px dashed var(--darkGrey-color);
 }
+
+.mv-popup {
+  font-family: var(--font-family);
+}

@@ -14,10 +14,16 @@
 </head>
 
 <body mv-app="doction" mv-storage="local" mv-bar="no-login" mv-plugins="markdown">
+  <style mv-if="primaryColor">
+    :root {
+      --primary-color: #[primaryColor] !important;
+    }
+  </style>
   <meta property="selectedPage" mv-value="[$hash]">
   <div class="mv-bar mv-ui mv-fixed no-login"></div>
   <div class="wrapper">
     <aside class="sidebar">
+      <meta property="primaryColor" mv-default="123123">
       <div id="logo">
         <img src="" mv-default="https://icongr.am/fontawesome/cube.svg?size=128" alt="" property="logo">
         <h1>
