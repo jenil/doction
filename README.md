@@ -3,9 +3,7 @@ Doction
 
 Document your design system easily
 
-## Try it out
-
-Head to https://jenil.github.io/doction/?storage=local and click "Edit" on the top bar.
+Try it out, head to [the demo](https://jenil.github.io/doction/?storage=local) and click "Edit" on the top bar.
 
 
 ## Run locally
