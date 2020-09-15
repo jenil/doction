@@ -33,7 +33,7 @@
 						{
 							"title": "Primary",
 							"SvgCode": "<svg width=\"86px\" height=\"86px\" viewBox=\"0 0 86 86\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Styles/Colors\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"UI/Color/Flat/Primary\" fill=\"#728EA4\">\n            <rect id=\"Base\" x=\"0\" y=\"0\" width=\"86\" height=\"86\"></rect>\n        </g>\n    </g>\n</svg>",
-							"description": "Say something on when to use the primary color",
+							"description": "Lorem ipsum",
 							"fullWidth": false
 						}
 					]
